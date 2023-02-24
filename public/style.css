@@ -1,0 +1,82 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the background image and blur effect */
+.background {
+  background-image: url("https://i.imgur.com/3NyqYv1.jpg");
+  background-size: cover;
+  background-position: center center;
+  filter: blur(0px);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+/* Style the container */
+.container {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 50px;
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Style the heading */
+h1 {
+  font-family: "Google Sans", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #8aadf4; 
+}
+
+/* Style the paragraph */
+p {
+  font-family: "Google Sans", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #7289da;
+}
+
+/* Add a hover effect to the container */
+.container:hover {
+  box-shadow: 0 0 25px rgba(92, 108, 255, 0.5);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Style the Discord button */
+.discord-button {
+  background-color: #7289da;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Google Sans", sans-serif;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transform: translate(0, 0);
+}
+
+.discord-button:hover {
+  background-color: #677bc4;
+  transform: translate(-2px, -2px);
+}
+
+.discord-button:active {
+  background-color: #4e5d94;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
