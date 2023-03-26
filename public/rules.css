@@ -1,0 +1,164 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the background image and blur effect */
+.background {
+  background-image: url("https://i.imgur.com/xGA36Ky.jpg");
+  background-size: cover;
+  background-position: center center;
+  filter: blur(0px);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.container {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  margin: 110px auto;
+  max-width: 550px;
+  padding: 60px;
+  text-align: center;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Style the heading */
+h1 {
+  font-family: "Google Sans", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #eceff4;
+}
+
+/* Style the paragraph */
+p {
+  font-family: "Google Sans", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #eceff4;
+}
+
+/* Style the footer */
+footer {
+  backdrop-filter: blur(15px);
+  background-color: transparent;
+  border-radius: 15px 15px 15px 15px;
+  bottom: 10px;
+  height: 50px;
+  position: fixed;
+  width: calc(100% - 50px); /* уменьшаем ширину на 20px */
+  padding: 0 25px; /* добавляем отступы по 10px слева и справа */
+  left: 25px;
+  z-index: 1;
+  color: #ffffff;
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Add a hover effect to the footer */
+footer:hover {
+  box-shadow: 0 0 25px rgba(254, 123, 163, 0.5);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+footer p {
+  font-family: "Google Sans", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0;
+  padding-top: 15px;
+}
+
+/* Add heart emoji to the footer */
+footer span {
+  font-size: 16px;
+  color: #ff69b4;
+}
+
+/* Define the heart emoji */
+footer span::before {
+  content: "\2764\ufe0f";
+}
+
+.rain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.drop {
+  position: absolute;
+  top: -50px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  animation: fall 5s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+.top-container {
+  font-family: "Google Sans", sans-serif;
+  font-size: 10px;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  backdrop-filter: blur(15px); /* добавляем размытие фона */
+  border-radius: 10px 10px 10px 10px;
+  padding: 4px;
+  margin: 0 25px;
+  margin-top: 10px;
+  z-index: 1;
+  transition: box-shadow 0.3s ease;
+}
+
+.top-container:hover {
+  box-shadow: 0px 5px 15px rgba(254, 123, 163, 0.5); /* добавляем анимированную тень при наведении */
+}
+
+.information-button {
+  display: inline-block;
+  padding: 5px 10px;
+  border-bottom: 2px solid white;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 20px;
+  transition: border-bottom 0.3s ease;
+}
+
+.information-button:hover {
+  border-bottom: 2px solid transparent;
+}
+
+/* Add a hover effect to the container */
+.container:hover {
+  box-shadow: 0 0 25px rgba(92, 108, 255, 0.5);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
