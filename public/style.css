@@ -22,12 +22,13 @@
 /* Style the container */
 .container {
   background-color: transparent;
-  backdrop-filter: blur(5px);
-  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
   margin: 50px auto;
   max-width: 600px;
   padding: 50px;
   text-align: center;
+  overflow: hidden;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
@@ -37,7 +38,7 @@ h1 {
   font-size: 3rem;
   margin-bottom: 30px;
   text-transform: uppercase;
-  color: #8aadf4; 
+  color: #8aadf4;
 }
 
 /* Style the paragraph */
@@ -79,4 +80,75 @@ p {
 .discord-button:active {
   background-color: #4e5d94;
   box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Style the footer */
+footer {
+  backdrop-filter: blur(15px);
+  background-color: transparent;
+  border-radius: 15px 15px 15px 15px;
+  bottom: 10px;
+  height: 50px;
+  position: fixed;
+  width: calc(100% - 50px); /* уменьшаем ширину на 20px */
+  padding: 0 25px; /* добавляем отступы по 10px слева и справа */
+  left: 25px;
+  z-index: 1;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Add a hover effect to the footer */
+footer:hover {
+  box-shadow: 0 0 25px rgba(254, 123, 163, 0.5);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+footer p {
+  font-family: "Google Sans", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0;
+  padding-top: 15px;
+}
+
+/* Add heart emoji to the footer */
+footer span {
+  font-size: 16px;
+  color: #ff69b4;
+}
+
+/* Define the heart emoji */
+footer span::before {
+  content: "\2764\ufe0f";
+}
+
+.rain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.drop {
+  position: absolute;
+  top: -50px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  animation: fall 5s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
 }
