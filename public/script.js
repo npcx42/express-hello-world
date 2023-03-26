@@ -1,11 +1,10 @@
-window.addEventListener('load', function() {
+document.addEventListener('DOMContentLoaded', function() {
+
   const rain = document.createElement("div");
   rain.classList.add("rain");
 
-  // добавляем дождь на страницу
   document.body.appendChild(rain);
 
-  // создаем элементы для капель дождя
   for (let i = 0; i < 40; i++) {
     const drop = document.createElement("div");
     drop.classList.add("drop");
@@ -14,7 +13,6 @@ window.addEventListener('load', function() {
     rain.appendChild(drop);
   }
 
-  // добавляем стили для плавного появления дождя
   const style = document.createElement("style");
   style.innerHTML = `
     .rain {
