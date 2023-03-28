@@ -22,7 +22,7 @@
 .container {
   background-color: transparent;
   backdrop-filter: blur(10px);
-  border-radius: 10px;
+  border-radius: 15px;
   margin: 110px auto;
   max-width: 550px;
   padding: 60px;
