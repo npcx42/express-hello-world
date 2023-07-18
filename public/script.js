@@ -3,6 +3,15 @@ document.addEventListener('DOMContentLoaded', function() {
   const rain = document.createElement("div");
   rain.classList.add("rain");
 
+  window.addEventListener("load", function () {
+    var video = document.getElementById("background-video");
+
+    var videoUrl =
+      "https://cdn.glitch.global/8d405379-8d96-4ae1-b2bc-6b3e509d8a3c/setmefree.mp4?v=1689702089964";
+
+    video.src = videoUrl;
+  });
+
   document.body.appendChild(rain);
 
   for (let i = 0; i < 40; i++) {
