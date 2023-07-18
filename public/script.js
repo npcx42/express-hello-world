@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.body.appendChild(rain);
 
-  for (let i = 0; i < 40; i++) {
+  for (let i = 0; i < 30; i++) {
     const drop = document.createElement("div");
     drop.classList.add("drop");
     drop.style.left = Math.random() * window.innerWidth + "px";
